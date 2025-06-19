@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carta {
+    margin: 0 10px;
+}
+
+.carta img {
+    width: 150px;
+    height: auto;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
