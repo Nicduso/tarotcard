@@ -1,0 +1,29 @@
+# misc
+.DS_Store
+*.pem
+.fleet
+.idea
+Thumbs.db
+**/*.Identifier
+README.md
+
+# debug
+*.log
+
+# Configs locais de editores
+.idea
+*.swp
+*.swo
+
+# git
+.git
+.gitignore
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# vscode
+.vscode/*
+!.vscode/extensions.json

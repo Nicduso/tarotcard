@@ -1,0 +1,21 @@
+services:
+  php:
+    build:
+      context: ../../
+      dockerfile: ./docker/development/php/Dockerfile
+    container_name: php
+    working_dir: /var/www/html
+    volumes:
+      - ../../:/var/www/html
+
+  nginx:
+    container_name: nginx
+    build:
+      context: ../../
+      dockerfile: ./docker/development/nginx/Dockerfile
+    ports:
+      - 8080:80
+    volumes:
+      - ../../:/var/www/html
+    depends_on:
+      - php
